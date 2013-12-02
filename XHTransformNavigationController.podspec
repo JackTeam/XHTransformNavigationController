@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   s.name         = "XHTransformNavigationController"
   s.version      = "0.0.1"
   s.summary      = "A short description of XHTransformNavigationController."
-  s.homepage     = "http://EXAMPLE/XHTransformNavigationController"
+  s.homepage     = "https://github.com/JackTeame/XHTransformNavigationController"
   s.license      = 'MIT'
   s.author       = { "xhzengAIB" => "xhzengAIB@gmail.com" }
-  s.source       = { :git => "http://EXAMPLE/XHTransformNavigationController.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/JackTeame/XHTransformNavigationController.git", :tag => "0.0.1" }
   s.source_files  = 'Source', 'Source/**/*.{h,m}'
   s.exclude_files = 'Source/Resource'
 end
