@@ -21,7 +21,7 @@
 
 @interface KKNavigationController : UINavigationController
 {
-    CGFloat startBackViewX;
+    
 }
 
 // 默认为特效开启

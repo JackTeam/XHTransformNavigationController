@@ -14,6 +14,8 @@
 
 @interface KKNavigationController ()
 {
+    CGFloat startBackViewX;
+    
     CGPoint startTouch;
     
     UIImageView *lastScreenShotView;
@@ -107,15 +109,16 @@
 
 - (void)moveViewWithX:(float)x
 {
-    x = x>320?320:x;
-    x = x<0?0:x;
+    CGFloat width = CGRectGetWidth([[UIScreen mainScreen] bounds]);
+    x = x > width ? width : x;
+    x = x < 0 ? 0 : x;
     
     CGRect frame = self.view.frame;
     frame.origin.x = x;
     self.view.frame = frame;
     
-    float alpha = 0.4 - (x/800);
-
+    float alpha = 0.4 - (x / (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? 2000 : 800));
+    
     blackMask.alpha = alpha;
 
     CGFloat aa = abs(startBackViewX)/kkBackViewWidth;
@@ -184,7 +187,7 @@
         if (touchPoint.x - startTouch.x > 50)
         {
             [UIView animateWithDuration:0.3 animations:^{
-                [self moveViewWithX:320];
+                [self moveViewWithX:CGRectGetWidth([[UIScreen mainScreen] bounds])];
             } completion:^(BOOL finished) {
                 
                 [self popViewControllerAnimated:NO];
