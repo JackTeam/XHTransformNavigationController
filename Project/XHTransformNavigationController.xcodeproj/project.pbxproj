@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0CFE6D184D00A900C6B813 /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CFE6C184D00A900C6B813 /* KKNavigationController.m */; };
+		AB0CFE6E184D00A900C6B813 /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CFE6C184D00A900C6B813 /* KKNavigationController.m */; };
 		ABF2C665184CB9E5009BC758 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF2C664184CB9E5009BC758 /* Foundation.framework */; };
 		ABF2C667184CB9E5009BC758 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF2C666184CB9E5009BC758 /* CoreGraphics.framework */; };
 		ABF2C669184CB9E5009BC758 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF2C668184CB9E5009BC758 /* UIKit.framework */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0CFE6B184D00A900C6B813 /* KKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationController.h; sourceTree = "<group>"; };
+		AB0CFE6C184D00A900C6B813 /* KKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationController.m; sourceTree = "<group>"; };
 		ABF2C661184CB9E5009BC758 /* XHTransformNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHTransformNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF2C664184CB9E5009BC758 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ABF2C666184CB9E5009BC758 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0CFE6A184D00A900C6B813 /* KKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				AB0CFE6B184D00A900C6B813 /* KKNavigationController.h */,
+				AB0CFE6C184D00A900C6B813 /* KKNavigationController.m */,
+			);
+			path = KKNavigationController;
+			sourceTree = "<group>";
+		};
 		ABF2C658184CB9E5009BC758 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +133,7 @@
 		ABF2C66A184CB9E5009BC758 /* XHTransformNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				AB0CFE6A184D00A900C6B813 /* KKNavigationController */,
 				ABF2C673184CB9E5009BC758 /* AppDelegate.h */,
 				ABF2C674184CB9E5009BC758 /* AppDelegate.m */,
 				ABF2C698184CBC01009BC758 /* RootViewController.h */,
@@ -267,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF2C675184CB9E5009BC758 /* AppDelegate.m in Sources */,
+				AB0CFE6D184D00A900C6B813 /* KKNavigationController.m in Sources */,
 				ABF2C696184CBBAA009BC758 /* UINavigationController+XHNavigationControllerHiddenShowBug.m in Sources */,
 				ABF2C69E184CBDBA009BC758 /* HiddenNavigationBarViewController.m in Sources */,
 				ABF2C69A184CBC01009BC758 /* RootViewController.m in Sources */,
@@ -282,6 +297,7 @@
 				ABF2C697184CBBAA009BC758 /* UINavigationController+XHNavigationControllerHiddenShowBug.m in Sources */,
 				ABF2C69F184CBDBA009BC758 /* HiddenNavigationBarViewController.m in Sources */,
 				ABF2C69B184CBC01009BC758 /* RootViewController.m in Sources */,
+				AB0CFE6E184D00A900C6B813 /* KKNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

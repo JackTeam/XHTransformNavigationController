@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "KKNavigationController.h"
 
 @implementation AppDelegate
 
@@ -18,7 +19,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     RootViewController *rootViewController = [[RootViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    KKNavigationController *navigationController = [[KKNavigationController alloc] initWithRootViewController:rootViewController];
     self.window.rootViewController = navigationController;
     
     [self.window makeKeyAndVisible];
