@@ -58,9 +58,11 @@
 {
     [super viewDidLoad];
 
-    UIImageView *shadowImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"leftside_shadow_bg"]];
-    shadowImageView.frame = CGRectMake(-10, 0, 10, self.view.frame.size.height);
-    [self.view addSubview:shadowImageView];
+    self.view.layer.shadowColor = [[UIColor blackColor]CGColor];
+    self.view.layer.shadowOffset = CGSizeMake(5, 5);
+    self.view.layer.shadowRadius = 5;
+    self.view.layer.shadowOpacity = 1;
+    self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
     
     UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self
                                                                                 action:@selector(paningGestureReceive:)];
@@ -120,9 +122,6 @@
 
     CGFloat lastScreenShotViewHeight = kkBackViewHeight;
     
-    if (!iOS7) {
-        lastScreenShotViewHeight = lastScreenShotViewHeight - 20;
-    }
     [lastScreenShotView setFrame:CGRectMake(startBackViewX+y,
                                             0,
                                             kkBackViewWidth,
