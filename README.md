@@ -14,3 +14,9 @@ XHTransformNavigationController
 [self.navigationController pushViewControllerWithNavigationControllerTransition:hiddenNavigationBarViewController];
 
 // hiddenNavigationBarViewController就是需要隐藏导航栏的界面了，既是B控制器
+
+
+
+中文:      XHTransformNavigationController 是在MIT协议下使用的，可以在LICENSE文件里面找到相关的使用协议信息.
+
+English:   XHTransformNavigationController is acailable under the MIT license, see the LICENSE file for more information.
